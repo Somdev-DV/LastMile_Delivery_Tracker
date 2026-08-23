@@ -16,7 +16,7 @@ export class NotificationService {
 
   constructor() {
     if (env.SMTP_HOST && env.SMTP_USER && env.SMTP_PASS) {
-      this.emailTransporter = nodemailer.createTransporter({
+      this.emailTransporter = nodemailer.createTransport({
         host: env.SMTP_HOST,
         port: env.SMTP_PORT,
         secure: env.SMTP_PORT === 465,

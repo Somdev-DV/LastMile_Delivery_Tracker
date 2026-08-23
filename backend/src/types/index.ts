@@ -5,11 +5,13 @@ import {
   PaymentType,
   RouteType,
   NotificationChannel,
+  NotificationStatus,
   AssignmentMethod,
   AgentAvailability,
+  AttemptStatus,
 } from '@prisma/client';
 
-export { Role, OrderStatus, OrderType, PaymentType, RouteType, NotificationChannel, AssignmentMethod, AgentAvailability };
+export { Role, OrderStatus, OrderType, PaymentType, RouteType, NotificationChannel, NotificationStatus, AssignmentMethod, AgentAvailability, AttemptStatus };
 
 export interface JwtPayload {
   userId: string;
